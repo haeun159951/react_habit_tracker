@@ -1,17 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'; // html과 연결하는 작업
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './app';
+import '@fortawesome/fontawesome-free/js/all.js';
+import SimpleHabit from './components/simpleHabit';
 
 ReactDOM.render(
+  // use strict 과 같은 기능 : 2 번씩 호출된다. 그래서 잘못된 것은 없는지 확인 가능
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
